@@ -1,0 +1,37 @@
+{
+  "name": "at-frontoffice-dso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "e2e-test": "mkdirp report && cucumber-js --require-module babel-core/register --require cucumber.conf.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report.json",
+    "report-chrome": "node create-html-report-chrome.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "chromedriver": "^83.0.0",
+    "cucumber": "^5.1.0",
+    "cucumber-html-reporter": "^5.0.2",
+    "cucumber-pretty": "^1.5.2",
+    "dotenv": "^8.1.0",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "html-dnd": "^1.2.1",
+    "mkdirp": "^0.5.1",
+    "multiple-cucumber-html-reporter": "^1.13.1",
+    "nightwatch": "^1.2.4",
+    "nightwatch-api": "^2.3.0",
+    "randomstring": "^1.1.5",
+    "selenium-server": "^3.141.59"
+  }
+}
